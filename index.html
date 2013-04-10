@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Epub Clean Code</title>
+</head>
+<body >
+	<div id="wrap">
+		<header >
+			<h1>Epub Clean Code</h1>
+		</header>
+		<section >
+			<aside >
+				<form  id="options">
+				  <fieldset>
+				    <legend>Options:</legend>
+				    <ul >
+				    	<li><label for="lines">Fix broken lines </label><input type="checkbox" name="lines" value="lines" id="lines" checked="yes"></li>
+				    	<li><label for="bold">Remove bold </label><input type="checkbox" name="bold" value="bold" id="bold"></li>
+    				    <li><label for="italic">Remove italic </label><input type="checkbox" name="italic" value="italic" id="italic"></li>
+    				    <li><label for="others">Remove other text formatting </label><input type="checkbox" name="others" value="others" id="others"></li>
+    				</ul>
+				  </fieldset>
+				</form>
+				  <a  href="#" id="clean">Clean!</a>
+			</aside>
+			<h2 id="editTag" class="selected">Edit</h2>
+			<h2 id="viewTag" >View</h2>
+			<div id="main">
+				<div id="editable">
+					<form action="" >
+						<textarea  id="liveText" name="liveText"></textarea>
+					</form>
+				</div>
+				<div id="viewArea">
+					<iframe id="viewArea" allowfullscreen="allowfullscreen" frameborder="1"></iframe>
+				</div>
+			</div>
+		</section>
+		<footer><p>Epub Clean Code by Paulo Carvalho</p><br/>
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+		</footer>
+	</div>
+<script src="script.js"></script>
+</body>
+</html>

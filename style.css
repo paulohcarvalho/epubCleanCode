@@ -1,0 +1,104 @@
+*{margin: 0;padding: 0;}
+html, body{height:100%;}
+body{background: #E7E7C9;}
+#wrap{
+	background: white;
+	width: 960px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+header{
+	text-align: center;
+	height: 50px;
+	padding-top: 5px;
+	background: #5E1010;
+	color: white;
+	margin-bottom:20px; 
+}
+aside{
+	display: inline-block;
+	height: 100%;
+	vertical-align: top;
+	margin: 0px 2px 0 5px;
+	text-align: center;
+}
+
+ul{
+	list-style: none;
+	padding: 5px;
+	text-align: right;
+}
+#options{
+	margin-bottom: 30px;
+}
+#clean{
+	background: #5E1010;
+	color: white;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 18pt;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1pt;
+	border-style: solid;
+	border-color: black;
+}
+#main{
+	display: inline-block;
+	position: relative;
+	left: -132px;
+	top:6px;
+}
+h2{
+	width:60px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	border: 1pt;
+	border-style: solid;
+	border-color: black;
+	position: relative;
+	z-index: 3;
+}
+h2:hover{
+	background: black;
+	color:white;
+}
+.selected{
+	background: #5E1010;
+	color:white;
+	border-bottom-color: white!important;
+}
+textarea{
+	position: relative;
+	resize:none;
+	overflow: auto;
+	height: 500px;
+	width: 730px;
+}
+#editable{
+	position: absolute;
+	z-index: 1;
+}
+#viewArea{
+	position: absolute;
+	height: 500px;
+	width: 730px;
+	z-index: 0;
+	border: 1pt;
+	background: white;
+	border-style: solid;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 960px;
+	background: #5E1010;
+	color:white;
+	text-align: center;
+	padding: 5px 0;
+}
+a{
+	color: white;
+}
