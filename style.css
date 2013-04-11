@@ -88,6 +88,7 @@ textarea{
 	border: 1pt;
 	background: white;
 	border-style: solid;
+	overflow: auto;
 }
 
 footer{

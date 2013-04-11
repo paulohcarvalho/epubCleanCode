@@ -26,16 +26,16 @@ $(function() {
 	// press clean!
 	$("#clean").click(function(){
 		if($("#lines").is(":checked")){
-			liveText = liveText.replace(/([^\.\?\:\!])<\/p>\n<p>/g,"$1");
+			liveText = liveText.replace(/([^\;\.\?\:\!]+)(\s*)<\/p>(\n*)(\s*)<p([^>]*)>/gi,"$1 ");
 		};
 		if($("#bold").is(":checked")){
-			liveText = liveText.replace(/<b>([^<\/b>]*)<\/b>/gi,"$1");
+			liveText = liveText.replace(/<b([^>]*)>([^<\/b>]*)<\/b>/gi,"$2");
 		};
 		if($("#italic").is(":checked")){
-			liveText = liveText.replace(/<i>([^<\/i>]*)<\/i>/gi,"$1");
+			liveText = liveText.replace(/<i([^>]*)>([^<\/i>]*)<\/i>/gi,"$2");
 		};
 		if($("#others").is(":checked")){
-			liveText = liveText.replace(/<span>([^<\/span>]*)<\/span>/gi,"$1");
+			liveText = liveText.replace(/<span([^>]*)>([^<\/span>]*)<\/span>/gi,"$2");
 		};
 		$("#liveText").val(liveText);
 		$("#viewArea").html(liveText);
